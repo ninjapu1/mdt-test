@@ -1,0 +1,177 @@
+.div_display{
+    border: 2px solid cornflowerblue;
+    width: 200px;
+    display: inline-block;
+    height: 150px;
+}
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.flex_container > div{
+    border: 2px solid salmon;
+    width: 250px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+img{
+    width: 250px;
+}
+h1{
+    color: skyblue;
+    font-size: 100px;
+    background-color: salmon;
+    text-align: center;
+}
+#chicken-1{
+    float: left;
+    width: 400px;
+    border: 5px chocolate;
+    border-radius: 100px;
+    vertical-align: middle;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+h2{
+    background-color: salmon;
+}
+h3{
+    background-color: salmon;
+    width: 500px;
+    text-align: center;
+}
+h4{
+    font-size: 20px;
+}
+a:link{
+    color: brown;
+}
+a:visited{
+    color: orangered;
+}
+a:hover{
+    color: coral;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 10%, auto 20%;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+
+#header{
+    grid-column: 1 / span 3;
+    text-align: center;
+    background-color: skyblue;
+   
+}
+
+#menu{
+    grid-column: 1 / span 1;
+    background-color: skyblue;
+   
+}
+.flex_container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex_container2 > div{
+    width: 300px;
+}
+#main{
+    grid-column: 2 / span 1;
+    text-align: left;
+    background-color: skyblue;
+   
+}
+#right{
+    grid-column: 3 / span 1;
+    text-align: left;
+    background-color: skyblue;
+   
+}
+
+#footer{
+    grid-column: 1 / span 3;
+    background-color: skyblue;
+   
+}
+@media only screen and (max-width: 767px){
+    grid-container{
+        display: grid;
+        grid-template-columns: auto 20%;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 3;
+        background-color: skyblue;
+   
+    }
+    
+    #menu{
+        grid-column: 1 / span 1;
+        background-color: skyblue;
+   
+    }
+    
+    #main{
+        grid-column: 2 / span 2;
+        background-color: skyblue;
+   
+    }
+    #right{
+        grid-column: 1 / span 3;
+        background-color: skyblue;
+   
+    }
+    
+    #footer{
+        grid-column: 1 / span 3;
+        background-color: skyblue;
+   
+    }    
+}
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 1;
+        text-align: center;
+        background-color: skyblue;
+   
+    }
+    #menu{
+        grid-column: 1 / span 1;
+        text-align: left;
+        background-color: skyblue;
+   
+    }
+    #main{
+        grid-column: 1 / span 1;
+        font-size: 35px;
+        background-color: skyblue;
+   
+    }
+    #right{
+        grid-column: 1 / span 1;
+        font-size: 35px;
+        background-color: skyblue;
+   
+    }
+    #footer{
+        grid-column: 1 / span 1;
+        background-color: skyblue;
+   
+    }
+}

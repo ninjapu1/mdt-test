@@ -1,0 +1,236 @@
+body{
+    background-color: #DADADA;
+}
+
+.div_display{
+    width: 200px;
+    display: inline-block;
+    height: 150px;
+}
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.flex_container > div{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#pooh{
+   width: 700px;
+   border-radius: 50%;
+}
+h1{
+    color: skyblue;
+    font-size: 100px;
+    background-color: #E25B5B;
+    text-align: center;
+}
+h2{
+    background-color: #E25B5B;
+    text-align: center;
+}
+.text{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+h5{
+    background-color: #E25B5B;
+    text-align: center;
+    font-size: 25px;
+}
+.text3{
+    padding-left: 20px;
+}
+#fb{
+    width: 100px;
+    padding-top: 30px;
+}
+#ig{
+    width: 100px;
+    padding-top: 30px;
+}
+h4{
+    background-color: #E25B5B;
+    text-align: center;
+    font-size: 25px;
+}
+h3{
+    background-color: #E25B5B;
+    text-align: center;
+    font-size: 45px;
+}
+.text4{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+#skill{
+    width: 70%;
+    padding-left: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 10%, auto 20%;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+    font-size: 30px;
+    text-align: center;
+}
+
+#header{
+    grid-column: 1 / span 3;
+    text-align: center;
+    background-color: #DADADA;
+    margin-top: 80px;
+}
+
+#menu{
+    grid-column: 1 / span 3;
+    background-color: #DADADA;
+   
+}
+.flex_container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex_container2 > div{
+    width: 300px;
+}
+#main{
+    grid-column: 1 / span 2;
+    text-align: left;
+    background-color: rgb(115, 175, 199);
+   
+}
+#right{
+    grid-column: 3 / span 1;
+    text-align: left;
+    background-color: rgb(115, 175, 199);
+   
+}
+@media only screen and (max-width: 768px){
+    grid-container{
+        display: grid;
+        grid-template-columns: auto 20%;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 1;
+        background-color: rgb(115, 175, 199);
+   
+    }
+    
+    #menu{
+        grid-column: 1 / span 1;
+        background-color: #DADADA;
+   
+    }
+    
+    #main{
+        grid-column: 1 / span 2;
+        background-color: srgb(115, 175, 199);
+   
+    }
+    #right{
+        grid-column: 1 / span 1;
+        background-color: rgb(115, 175, 199);
+   
+    }
+}
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 1;
+        text-align: center;
+        background-color: #DADADA;
+   
+    }
+    #menu{
+        grid-column: 1 / span 1;
+        text-align: left;
+        background-color: #DADADA;
+   
+    }
+    #main{
+        grid-column: 1 / span 1;
+        font-size: 35px;
+        background-color: rgb(115, 175, 199);
+   
+    }
+    #right{
+        grid-column: 1 / span 1;
+        font-size: 35px;
+        background-color: rgb(115, 175, 199);
+   
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: ivory;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(133, 133, 134);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 777;
+}
+.navbar{
+    height: 80px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 26px;
+    padding: 20px;
+    margin-left: 20px;
+}
+li a:hover{
+    background-color: #5a5b5c;
+}
+@media (max-width : 768px){
+    .menu{
+        position: fixed;
+        left: 0;
+        background-color: rgb(133, 133, 134);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu li a{
+        font-size: 20px;
+        margin-right: 20px ;
+        padding: 0;
+    }
+}
